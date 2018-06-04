@@ -71,7 +71,7 @@ h1 {
 
 .cont {
   margin: 0 0.24em;
-  margin-bottom: 1em;
+  margin-bottom: 0.1em;
 }
 
 .side-gap {
@@ -164,6 +164,7 @@ ul {
 
 
 .extras {
+  margin-top: -1.7em;
   width: 20%;
   text-align: center;
   font-size: 2.0em;
