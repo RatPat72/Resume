@@ -10,5 +10,159 @@
     font-family: 'Sacramento', cursive;
 */
 
+.top-bar {
+  margin: 0 auto;
+  padding: 0.9em 0.22em 0.15em 0.4em;
+  /*  background-color: azure;*/
+}
+
+body {
+  margin: 0 auto;
+  max-width: 96%;
+  padding: 5px 0;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.left {
+  margin: 0;
+  float: left;
+}
 
 
+
+.right {
+  float: right;
+}
+
+#Name {
+  font-size: 54px;
+  font-weight: 500;
+  margin: 0 10px;
+  font-family: 'Cinzel', serif;
+}
+
+#Field {
+  margin: 0 12px;
+  font-family: 'Abel', sans-serif;
+}
+
+.contact {
+  padding-bottom: 7px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.split-cont {
+  margin: 0.1em 0;
+  /*  height: 0.12em;*/
+  background-color: black;
+  border: 0.06em black solid;
+}
+
+
+
+.content {
+  /*  background-color: darkgrey;*/
+  font-family: 'Playfair Display', serif;
+}
+
+.cont {
+  margin: 0 0.24em;
+  margin-bottom: 0.6em;
+}
+
+.side-gap {
+  padding-left: 1px;
+/*  border-left: 2px black solid;*/
+}
+
+.br-sect {
+  margin: 0 14px 0 -8px;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+.huge-sp {
+  background-color: black;
+  border: 0.2em black solid;
+  margin: 0.7em 0;
+}
+
+.left-side1 {
+  width: 70%;
+}
+
+.right-side1 {
+  width: 29%;
+}
+
+.left-side2 {
+  width: 32%;
+}
+
+.right-side2 {
+  width: 67%;
+}
+
+.left-side3 {
+  width: 100%;
+}
+
+.right-side3 {
+  width: 29%;
+}
+
+.left-side4 {
+  width: 20%;
+}
+
+.right-side4 {
+  width: 79%;
+}
+
+.flc {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 20%;
+
+}
+
+.dsd {
+  box-shadow: 0 0 5px black;
+  border-left: 2px black dashed;
+  align-self: center;
+  flex: 1;
+}
+
+.edu-box {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.ll > li{
+  display: inline-block;
+  padding-right: 6em;
+}
+
+
+.extras {
+  width: 20%;
+  text-align: center;
+  font-size: 2.0em;
+  font-family: 'Dancing Script', cursive;
+}
