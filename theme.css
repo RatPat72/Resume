@@ -75,7 +75,7 @@ h1 {
 
 .side-gap {
   padding-left: 1px;
-/*  border-left: 2px black solid;*/
+  /*  border-left: 2px black solid;*/
 }
 
 .br-sect {
@@ -154,7 +154,7 @@ ul {
   padding-bottom: 10px;
 }
 
-.ll > li{
+.ll > li {
   display: inline-block;
   padding-right: 6em;
 }
