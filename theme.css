@@ -10,168 +10,190 @@
     font-family: 'Sacramento', cursive;
 */
 
-.top-bar {
-  margin: 0 auto;
-  padding: 0.9em 0.22em 0.15em 0.4em;
-  /*  background-color: azure;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  max-width: 96%;
-  padding: 5px 0;
+    max-width: 210mm;
+    height: 297mm;
+    padding: 20px;
 }
 
-h1 {
-  margin: 0 auto;
+@media screen {
+    body {
+        background-color: #d3ffec;
+        border: 1px solid black;
+    }
 }
 
-.left {
-  margin: 0;
-  float: left;
+body > * {
+    /*            border: 2px solid black;*/
 }
 
-
-
-.right {
-  float: right;
+section > h2 {
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    border-bottom: 1px solid black;
+    margin-right: 10px;
+    padding-left: 5px;
 }
 
-#Name {
-  font-size: 54px;
-  font-weight: 500;
-  margin: 0 10px;
-  font-family: 'Cinzel', serif;
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: #0000ff;
 }
 
-#Field {
-  margin: 0 12px;
-  font-family: 'Abel', sans-serif;
+.mk-grid {
+    display: grid;
+    grid-template: auto auto repeat(5, auto) / 3fr 1fr 1fr 2fr;
+    grid-template-areas:
+        "nme nme ... cnt"
+        "lne lne lne lne"
+        "smr smr smr abt"
+        "tch skl skl skl"
+        "tch edu edu edu"
+        "tch pro pro pro"
+        "prf hbs hbs ext";
 }
 
-.contact {
-  padding-bottom: 7px;
-  font-family: 'Raleway', sans-serif;
+.nme {
+    grid-area: nme;
+    height: 132px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
-.split-cont {
-/*  width: 0.1em;*/
-  height: 0.07em;
-  background-color: black;
-/*  border: 0.07em black solid;*/
-  border : none;
+.nme > h1 {
+    font-weight: normal;
+    font-size: 55px;
+    font-family: 'Cinzel', serif;
 }
 
-
-
-.content {
-  /*  background-color: darkgrey;*/
-  font-family: 'Playfair Display', serif;
+.nme > p {
+    font-size: 1.2em;
+    font-family: 'Abel', sans-serif;
 }
 
-.cont {
-  margin: 0 0.24em;
-  margin-bottom: 0.1em;
+.cnt {
+    grid-area: cnt;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 106px;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
-.side-gap {
-  padding-left: 1px;
-  /*  border-left: 2px black solid;*/
+.lne {
+    grid-area: lne;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 20px;
 }
 
-.br-sect {
-/*  background-color: black;*/
-  margin: 0 14px 0 -8px;
+.smr {
+    grid-area: smr;
+    /*    margin-top: 17px;*/
+    padding: 0 20px 0 5px;
+    font-size: 17px;
 }
 
-h3 {
-  margin: 0;
-  font-weight: 300;
-  font-family: 'Dosis', sans-serif;
+.smr > p {
+    /*    text-align: justify;*/
 }
 
-p {
-  margin: 0;
+.abt {
+    grid-area: abt;
 }
 
-ul {
-  margin: 0;
+.abt > div > p {
+    margin-left: 20px;
 }
 
-.huge-sp {
-  background-color: black;
-  border: 0.2em black solid;
-  margin: 0.7em 0;
+.tch {
+    grid-area: tch;
 }
 
-.left-side1 {
-  width: 70%;
+.tch > div {
+    margin-top: 7px;
+    margin-left: 20px;
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
-.right-side1 {
-  width: 29%;
+.tch > ul {
+    margin-left: 60px;
+    font-size: 17px;
 }
 
-.left-side2 {
-  width: 32%;
+.skl {
+    grid-area: skl;
 }
 
-.right-side2 {
-  width: 67%;
+.skl > ul {
+    font-size: 17px;
+    margin-top: 10px;
 }
 
-.left-side3 {
-  width: 100%;
+.edu {
+    grid-area: edu;
+    /*    font-size: 17px;*/
 }
 
-.right-side3 {
-  width: 29%;
+.edu > div {
+    margin-top: 3px;
+    margin-left: 10px;
 }
 
-.left-side4 {
-  width: 20%;
+.edu > div > p {
+    padding-left: 20px;
+    margin-left: 16px;
+    border-left: 1px dotted black;
+    margin-right: 10px;
 }
 
-.right-side4 {
-  width: 79%;
+.prf {
+    grid-area: prf;
 }
 
-.flc {
-  display: flex;
-  flex-direction: column;
-/*  margin-right: -1em;*/
-  width: 13%;
-
+.cmpny {
+    font-size: 18px;
 }
 
-.dsd {
-/*  box-shadow: 0 0 1px black;*/
-  border-left: 2px black dashed;
-  align-self: center;
-  flex: 1;
+.pro {
+    grid-area: pro;
+    font-size: 17px;
 }
 
-.edu-box {
-  display: flex;
-  margin: 0 auto;
-  padding-bottom: 10px;
+.hbs {
+    grid-area: hbs;
 }
 
-.ll > li {
-  display: inline-block;
-  padding-right: 6em;
+.hbs > ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-
-.extras {
-  margin-top: -1.7em;
-  width: 20%;
-  text-align: center;
-  font-size: 2.0em;
-  font-family: 'Dancing Script', cursive;
+.hbs > ul > li {
+    font-size: 1.6em;
+    /*        margin-right: 80px;*/
 }
 
-.aaa {
-  font-size: 15px;
-  font-family:  cursive;
+.ext {
+    grid-area: ext;
+    text-align: center;
+    font-size: 2.0em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.mk-flex {
+    display: flex;
 }
